@@ -38,10 +38,13 @@ android {
     }
     buildFeatures {
         mlModelBinding = true
+        viewBinding = true
     }
+
 }
 
 dependencies {
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -59,6 +62,7 @@ dependencies {
     implementation("com.google.firebase:firebase-auth-ktx")
     implementation("com.google.firebase:firebase-firestore-ktx")
     implementation("com.google.android.material:material:1.7.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
 
     // Tambahkan dependensi untuk play-services-location
     implementation("com.google.android.gms:play-services-location:21.0.1")
@@ -76,6 +80,7 @@ dependencies {
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
     implementation("io.coil-kt:coil:2.6.0")
     implementation("com.github.bumptech.glide:glide:4.16.0")
@@ -83,8 +88,5 @@ dependencies {
     implementation("androidx.room:room-runtime:2.6.1")
     ksp("androidx.room:room-compiler:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
-
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 }
 
