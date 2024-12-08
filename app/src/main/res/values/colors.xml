@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="apk">#1a6c9c</color>
+    <color name="edit_text_background">#a1b5c7</color>
+    <color name="checkbox_tint">#1a6c9c</color>
+    <color name="primary_color">#1a6c9c</color>
+    <color name="gray_color">#606060</color>
+    <color name="bottom_nav_bg">#F3EDF7</color>
+    <color name="bottom_nav_icon_color">#000000</color>
+    <color name="bottom_nav_text_color">#000000</color>
+
+</resources>
