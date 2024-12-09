@@ -24,7 +24,7 @@ import java.lang.IllegalStateException
 class ImageClassifierHelp(
     val thresholdValue: Float = 0.1f,
     var maxResultsValue: Int = 3,
-    val modelNameValue: String = "cancer_classification.tflite",
+    val modelNameValue: String = "model_VGG16.tflite",
     val contextValue: Context,
     val classifierListenerValue: ClassifierListener?
 ) {

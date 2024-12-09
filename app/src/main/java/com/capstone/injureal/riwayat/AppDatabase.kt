@@ -26,24 +26,13 @@ abstract class AppDatabase : RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     AppDatabase::class.java,
-                    "app_database"
+                    "wounds"
                 )
-//                    .addMigrations(MIGRATION_1_2)
                     .build()
                 INSTANCE = instance
                 return instance
             }
         }
-
-//        private val MIGRATION_1_2 = object : Migration(1, 2) {
-//            override fun migrate(database: SupportSQLiteDatabase) {
-//                database.execSQL("CREATE TABLE IF NOT EXISTS prediction_history_new (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, imagePath TEXT NOT NULL, result TEXT NOT NULL)")
-//                database.execSQL("INSERT INTO prediction_history_new (imagePath, result) SELECT imagePath, result FROM prediction_history")
-//                database.execSQL("DROP TABLE IF EXISTS prediction_history")
-//                database.execSQL("ALTER TABLE prediction_history_new RENAME TO prediction_history")
-//            }
-//        }
-
     }
 
 }

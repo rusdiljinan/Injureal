@@ -39,8 +39,8 @@ android {
     buildFeatures {
         mlModelBinding = true
         viewBinding = true
+        buildConfig = true
     }
-
 }
 
 dependencies {
@@ -54,6 +54,7 @@ dependencies {
     implementation(libs.firebase.firestore)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
+    implementation(libs.tensorflow.lite.gpu)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
